@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+    <!--城市。温度，空气-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/width_size_5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/city_name"
+            android:layout_marginLeft="@dimen/width_size_10"
+            android:text="@string/city_name"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16"
+            />
+
+        <TextView
+            android:layout_width="@dimen/width_size_0"
+            android:layout_height="wrap_content"
+            android:id="@+id/temperature"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/temperature"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_18"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/air_quality"
+            android:layout_marginRight="@dimen/width_size_10"
+            android:text="@string/air_quality"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_16"
+            android:background="@drawable/text_gray_background"/>
+
+    </LinearLayout>
+    <!--进度条-->
+    <mrkj.library.wheelview.circlebar.CircleBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_size_0"
+        android:id="@+id/show_progress"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/want_steps"
+        android:layout_margin="@dimen/width_size_3"
+        android:gravity="center"
+        android:textColor="@color/theme_blue_two"
+        android:textSize="@dimen/font_size_18"
+        android:text="目标步数"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/width_size_10"
+        android:layout_marginBottom="@dimen/width_size_10"
+        android:paddingLeft="@dimen/width_size_30"
+        android:paddingRight="@dimen/width_size_30">
+        <TextView
+            android:layout_width="@dimen/width_size_0"
+            android:layout_height="wrap_content"
+            android:id="@+id/mileage_txt"
+            android:layout_marginLeft="@dimen/font_size_20"
+            android:layout_weight="1"
+            android:textSize="@dimen/font_size_18"
+            android:drawableLeft="@mipmap/mileage"
+            android:text="@string/mileage"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="@dimen/width_size_0"
+            android:layout_height="wrap_content"
+            android:id="@+id/heat_txt"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/font_size_20"
+            android:textSize="@dimen/font_size_18"
+            android:drawableLeft="@mipmap/heat"
+            android:text="@string/heat"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

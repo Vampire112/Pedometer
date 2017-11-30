@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.pedometer.MainActivity">
+
+
+
+    <FrameLayout
+        android:id="@+id/frag_sport"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_size_0"
+        android:layout_weight="1">
+
+
+    </FrameLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ui_btn_group"
+        android:padding="3dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/frag_sport"
+        android:layout_alignParentEnd="true">
+        <RadioButton
+            android:id="@+id/sport_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            style="@style/MyBottomBarCheck"
+            android:gravity="center"
+            android:checked="true"
+            android:text="@string/sport_txt"
+            android:drawableTop="@drawable/ui_sport_selector"/>
+        <RadioButton
+            android:id="@+id/find_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            style="@style/MyBottomBarCheck"
+            android:gravity="center"
+            android:checked="false"
+            android:text="@string/find_txt"
+            android:drawableTop="@drawable/ui_find_selector"/>
+
+        <RadioButton
+            android:id="@+id/mine_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            style="@style/MyBottomBarCheck"
+            android:gravity="center"
+            android:checked="false"
+            android:text="@string/mine_txt"
+            android:drawableTop="@drawable/ui_mine_selector"/>
+        <RadioButton
+            android:id="@+id/our_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            style="@style/MyBottomBarCheck"
+            android:gravity="center"
+            android:checked="false"
+            android:text="@string/our_txt"
+            android:drawableTop="@drawable/ui_heart_selector"/>
+
+    </RadioGroup>
+</LinearLayout>
